@@ -1,3 +1,29 @@
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Light", ("ttf")) {
+  font-style: normal;
+  font-weight: 200;
+}
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Regular", ("ttf")) {
+  font-style: normal;
+  font-weight: 400;
+}
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-SemiBold", ("ttf")) {
+  font-style: normal;
+  font-weight: 600;
+}
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", ("ttf")) {
+  font-style: normal;
+  font-weight: 700;
+}
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-ExtraBold", ("ttf")) {
+  font-style: normal;
+  font-weight: 800;
+}
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Black", ("ttf")) {
+  font-style: normal;
+  font-weight: 900;
+}
+
+
 html {
   color: $base-font-color;
   font-family: $base-font-family;
@@ -14,7 +40,7 @@ h6 {
   font-family: $heading-font-family;
   font-size: modular-scale(1);
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  // margin: 0 0 $small-spacing;
 }
 
 p {
@@ -23,7 +49,7 @@ p {
 
 a {
   color: $action-color;
-  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
   transition: color $base-duration $base-timing;
 
   &:hover {

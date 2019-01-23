@@ -1,9 +1,12 @@
+$ionicons-font-path: "../fonts/Ionicons";
+
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
 
 @import '~bourbon/core/bourbon';
-$ionicons-font-path: "../fonts/Ionicons";
 @import '~ionicons/dist/scss/ionicons';
+@import '~animate.css/animate';
 @import 'base/base';
+

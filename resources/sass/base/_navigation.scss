@@ -1,0 +1,58 @@
+.navbar {
+	> ul {
+		display: flex;
+		
+		> li > a {
+			display: block;
+			padding: $small-spacing;
+			color: $brand-offwhite;
+			text-decoration: none;
+			font-weight: 700;
+			// font-size: $nav-font-size;
+			text-transform: uppercase;
+		}
+	}
+}
+.nav-items {
+
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+
+	@media (min-width: 992px) {
+		visibility: visible;
+		opacity: 1;
+		position: static;
+	}
+
+	&.is-toggled {
+		@extend .animated, .fadeInLeft;
+		visibility: visible;
+		opacity: 1;
+		position: static;
+		width: 100%;
+	}
+}
+
+
+.navbar {
+	display: flex;
+	@apply items-center justify-between flex-wrap p-6;
+	
+	li {
+		@apply mt-4 mr-4;
+		
+		@media (min-width: 992px) {
+			@apply inline-block mt-0;
+		}
+	}
+	
+	li > a {
+		@apply block text-brand-offwhite font-black text-sm tracking-wide uppercase;
+		text-decoration: none;
+
+		&:hover {
+			@apply text-brand-red;
+		}
+	}
+}

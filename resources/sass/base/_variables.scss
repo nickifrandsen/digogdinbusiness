@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: $font-stack-system;
+$base-font-family: "Montserrat", Arial, sans-serif;
 $heading-font-family: $base-font-family;
 
 // Line height
@@ -21,6 +21,21 @@ $light-gray: #ddd;
 // Font Colors
 $base-font-color: $dark-gray;
 $action-color: $blue;
+
+$primary-color: rgba(0, 177, 106, 1);
+
+$brand-black: #261326;
+$brand-red: #dc2543;
+$brand-offwhite: #f2f4ef;
+
+$screen-sm: '576px';
+$screen-md: '768px';
+$screen-lg: '992px';
+$screen-xl: '1200px';
+
+// Nav
+$nav-font-color: $dark-gray;
+$nav-font-size: 1rem;
 
 // Border
 $base-border-color: $light-gray;

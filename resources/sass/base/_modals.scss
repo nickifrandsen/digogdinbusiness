@@ -1,0 +1,22 @@
+body.has-modal {
+	overflow: hidden;
+}
+
+.modal {
+	@apply fixed z-50 pin overflow-auto bg-smoke-dark ;
+	display: flex;
+	
+	@media (min-width: $screen-md) {
+		@apply fixed;
+	}
+	
+	.modal-body {
+		@apply shadow-inner max-w-md  pin-b pin-x align-top m-auto justify-end p-8 bg-white w-full relative; //flex flex-col;
+		display: flex;
+		flex-direction: column;
+		
+		@media (min-width: $screen-md) {
+			@apply relative justify-center h-auto shadow rounded;
+		}
+	}
+}

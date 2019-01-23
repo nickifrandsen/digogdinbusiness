@@ -21,11 +21,11 @@
 			<div class="w-full mx-auto lg:w-2/3">
 
 				<div class="pb-6">
-					<h1 class="text-center pb-4 font-normal text-xl uppercase">Online workshop<br><span class="font-black uppercase text-5xl" style="line-height: 1;">Dig & din<br>Business</span></h1>
-					<p class="text-center text-xl">Skab en business og et liv som er i balance. <br>Hvor din business er i tråd med dine værdier, og hvor hverdagen macther dine drømme om frihed og fleksibilitet.</p>
+					<h1 class="text-center pb-4 font-normal text-xl uppercase">Online workshop<br><span class="font-black uppercase text-5xl" style="line-height: 1;">Dig & din<br>business</span></h1>
+					<p class="text-center text-2xl">Sådan skaber du en business, der er i tråd med dine værdier, og hvor hverdagen macther dine drømme om frihed og fleksibilitet.</p>
 				</div>
 
-				<div class="">
+				<div class="pb-6">
 					<p>Har du mistet overblikket over din business, er du kørt sur i livet som selvstændig, eller overvejer du at starte din egen business, så er <i>Dig & Din Business</i> den online workshop som du har ventet på.</p>
 
 					<p>Drømmer du om en business, der matcher dit liv. Et liv, hvor der er plads til at gøre de ting du elsker og drømmer om. Ikke bare når du holder fri, men hver eneste dag fra du vågner til du går i seng. Så er du kommet til det rette sted. <i>Dig & Din Business</i> er et workshop-forløb for dig der gerne vil drive en business i tråd med andre områder af dit liv. En business, hvor dine værdier vægter højere end jagten på årlig økonomisk vækst. En business, hvor du og din kunde er i centrum. Og en business, som understøtter den måde du gerne vil arbejde på. </p><p>Det er et opgør med illusionenen om, at en større business er en bedre business. En bedre business er en business, der passer bedre til det liv du gerne vil leve. En bedre business er en livsstil, hvor arbejde og fritid smelter sammen på en mere harmonisk måde.</p>
@@ -120,7 +120,7 @@
 									<button type="submit" value="Tilmeld" name="subscribe" id="mc-embedded-subscribe" class="btn text-sm tracking-wide uppercase rounded">Tilmeld mig workshoppen</button>
 								</div>
 
-								<p class="text-sm">Efter du har tilmeldt dig via formularen her, så modtager du en mail med betalingslink (obs. der kan gå op til 24 timer). Når du har betal denne er du tilmeldt workshoppen.</p>
+								<p class="text-sm">Efter du har tilmeldt dig via formularen her, så modtager du en mail med betalingslink (obs. der kan gå op til 24 timer). Når du har betalt denne er du tilmeldt workshoppen.</p>
 								{{-- //og vil løbene bliv holdt opdateret pr. mail. Et par dage før workshoppens start modtager du en invitation til et lukket fora, hvor du kan stille spørgsmål og netværke med andre deltagere. --}}
 
 							</form>

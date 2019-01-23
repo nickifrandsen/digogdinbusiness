@@ -45,7 +45,7 @@ toggleMenu.onclick = function() {
 }
 
 window.addEventListener('click', function(e){   
-  if ( ! document.getElementById('header').contains(e.target) )
+  if ( ! document.getElementById('page-header').contains(e.target) )
   {
     navItems.classList.remove("is-toggled");
   }

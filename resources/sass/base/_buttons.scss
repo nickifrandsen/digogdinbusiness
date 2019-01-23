@@ -1,43 +1,122 @@
-$_button-background-color: $action-color;
-$_button-background-color-hover: shade($action-color, 20%);
+$_button-background-color: $brand-red;
+$_button-background-color-hover: shade($brand-offwhite, 20%) !default;
 
-#{$all-buttons} {
-  appearance: none;
-  background-color: $_button-background-color;
-  border: 0;
-  border-radius: $base-border-radius;
-  color: contrast-switch($_button-background-color);
-  cursor: pointer;
-  display: inline-block;
-  font-family: $base-font-family;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: $small-spacing $base-spacing;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color $base-duration $base-timing;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+.btn {
+	@apply text-xs font-bold py-3 px-4 no-underline text-white border border-transparent rounded tracking-wide uppercase;
+	background: $_button-background-color;
+	display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
-  &:hover {
-    background-color: $_button-background-color-hover;
-    color: contrast-switch($_button-background-color-hover);
-  }
+	&:hover {
+		@apply text-white;
+		background: lighten($_button-background-color, 10%);
+		transition: all .3s linear;
+	}
 
-  &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
-  }
+	&.btn-blue {
+		@apply bg-blue;
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+		&:hover {
+			@apply bg-blue-dark;
+		}
 
-    &:hover {
-      background-color: $_button-background-color;
-    }
-  }
+		&.btn-outline {
+			@apply text-blue-dark border-blue;
+
+			&:hover {
+				@apply bg-blue text-white;
+			}
+		}
+	}
+
+	&.btn-green {
+		@apply bg-green;
+
+		&:hover {
+			@apply bg-green-dark;
+		}
+
+		&.btn-outline {
+			@apply text-green border-green;
+
+			&:hover {
+				@apply bg-green text-white;
+			}
+		}
+	}
+	
+
+	&.btn-grey {
+		@apply bg-grey-darkest text-white;
+
+		&:hover {
+			@apply bg-grey-darker text-white;
+		}
+
+		&.btn-outline {
+			@apply text-grey-darkest border-grey-darkest;
+
+			&:hover {
+				@apply text-white;
+			}
+		}
+	}
+
+	&.btn-black {
+		@apply bg-black text-white;
+
+		&:hover {
+			@apply bg-grey-darkest text-white;
+		}
+
+		&.btn-outline {
+			@apply text-black border-black;
+
+			&:hover {
+				@apply bg-black text-white;
+			}
+		}
+
+		&.btn-link {
+			color: #22292f !important;
+		}
+	}
+
+	&.btn-white {
+		@apply bg-brand-offwhite text-black;
+
+		&:hover {
+			@apply bg-grey-lightest text-black;
+		}
+
+		&.btn-outline {
+			@apply text-white border-white;
+
+			&:hover {
+				@apply bg-white text-black;
+			}
+		}
+	}
+
+	&.btn-link {
+		@apply bg-transparent border-none p-0;
+		// background: none !important;
+		// border: none !important;
+		// padding: 0 !important;
+	}
+
+	&.btn-sm {
+		@apply text-xs px-4 py-2;
+	}
+
+	&.btn-outline {
+		@apply bg-transparent border;
+		
+		&:hover {
+			@apply text-white border-transparent;
+		}
+	}
+
 }
