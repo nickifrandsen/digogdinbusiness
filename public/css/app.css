@@ -37673,6 +37673,15 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .sr-only {
@@ -37683,13 +37692,6 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 dl {
@@ -37833,13 +37835,41 @@ hr {
   margin: 1.5em 0;
 }
 
+.is-content ul,
+.is-content ol,
+.is-content p {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.brand {
+  text-decoration: none;
+  color: #3d4852;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.brand:hover {
+  color: #3d4852;
+}
+
+.brand img {
+  width: 100px;
+}
+
+@media (min-width: 992px) {
+  .brand img {
+    width: 150px;
+  }
+}
+
 .navbar > ul {
   display: flex;
 }
 
 .navbar > ul > li > a {
   display: block;
-  padding: .75em;
+  padding: 1rem .75rem;
   color: #f2f4ef;
   text-decoration: none;
   font-weight: 700;
@@ -37875,6 +37905,11 @@ hr {
   padding: 1.5rem;
 }
 
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
 .navbar li {
   margin-top: 1rem;
   margin-right: 1rem;
@@ -37890,7 +37925,7 @@ hr {
 .navbar li > a {
   display: block;
   color: #f2f4ef;
-  font-weight: 900;
+  font-weight: 700;
   font-size: .875rem;
   letter-spacing: .05em;
   text-transform: uppercase;

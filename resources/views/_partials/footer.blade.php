@@ -8,7 +8,7 @@
 					CVR: 35785698 <br>
 				</p>
 			</div>
-			<div class="w-full md:w-1/2 text-right">
+			<div class="w-full md:w-1/2 md:text-right">
 				<p class="text-sm">
 					 <?php echo date('Y'); ?> &copy; Dig & Din Business
 				</p>

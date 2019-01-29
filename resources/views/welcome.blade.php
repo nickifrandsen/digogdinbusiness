@@ -136,48 +136,40 @@
 				</div>
 			</div>
 		</div>
-
-
-		<!-- Create a button that your customers click to complete their purchase. -->
-<button id="checkout-button">Pay</button>
-<div id="error-message"></div>
-
-
 	</section>
+
+
+
+	<script src="https://js.stripe.com/v3/"></script>
+
+{{-- 	<form action="/purchases" method="POST">
+		{{ csrf_field() }}
+		<button type="submit">Tilmeld mig nu</button>
+	</form> --}}
 
 </article>
 
 @endsection
 
 @section('scripts')
+
 <script>
-  var stripe = Stripe('pk_live_AE0sJoQbqVdj3abhE97fcgBA', {
-    betas: ['checkout_beta_4']
-  });
+	let stripe = StripeCheckout.configure({
+		key: "{{ config('services.stripe.key') }}",
+		image: '',
+		locale: 'auto'
+	});
 
-  var checkoutButton = document.getElementById('checkout-button');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{sku: 'sku_EMeIVKVbOtHWr8', quantity: 1}],
-
-      // Note that it is not guaranteed your customers will be redirected to this
-      // URL *100%* of the time, it's possible that they could e.g. close the
-      // tab between form submission and the redirect.
-      successUrl: 'https://digogdinbusiness.dk/success',
-      cancelUrl: 'https://digogdinbusiness.dk/cancel',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
+	document.querySelector('button').addEventListener('click', function () {
+		stripe.open({
+			name: 'Dig & Din Business',
+			description: 'Online workshop',
+			amount: 150000,
+			currency: 'dkk'
+		})
+	});
 </script>
+
 @endsection
 
 

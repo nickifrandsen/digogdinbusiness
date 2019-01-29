@@ -69,3 +69,9 @@ hr {
   border-top: 0;
   margin: $base-spacing 0;
 }
+
+.is-content {
+	ul, ol, p { 
+		@apply py-2; 
+	}
+}

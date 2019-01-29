@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/masterminds', function () {
+    return view('masterminds');
+});
+Route::get('/1-on-1', function () {
+    return view('oneonone');
+});
+Route::get('/om', function () {
+    return view('about');
+});
+
+Route::post('/purchases', 'PurchasesController@store');
