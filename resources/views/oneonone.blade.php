@@ -21,8 +21,8 @@
 			<div class="w-full mx-auto lg:w-2/3">
 
 				<div class="pb-6">
-					<h1 class="text-center pb-4 font-normal text-xl uppercase">Sparringsforløb og sessions<br><span class="font-black uppercase text-5xl" style="line-height: 1;">1-on-1 Sparring</span></h1>
-					<p class="text-center text-2xl">Tilpasset til dig og den specifikke situation du befinder dig i.</p>
+					<h1 class="text-center pb-4 font-normal text-xl uppercase">Sparringsforløb og sessions<br><span class="font-black uppercase text-5xl" style="line-height: 1;">1:1 Sparring</span></h1>
+					<p class="text-center text-2xl">Individuel sparrings tilpasset til dig og den specifikke situation du og din business står i.</p>
 				</div>
 
 				<div class="pb-6 is-content">

@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
+Route::get('/', function () {
+    return view('workshops');
+});
 Route::get('/masterminds', function () {
     return view('masterminds');
 });
@@ -24,5 +27,10 @@ Route::get('/1-on-1', function () {
 Route::get('/om', function () {
     return view('about');
 });
-
+Route::get('/handelsbetingelser', function () {
+    return view('terms');
+});
+Route::get('/privatlivspolitik', function () {
+    return view('privacy');
+});
 Route::post('/purchases', 'PurchasesController@store');

@@ -37847,6 +37847,7 @@ hr {
   color: #3d4852;
   font-size: 1.25rem;
   line-height: 1;
+  padding: 0;
 }
 
 .brand:hover {
@@ -37902,7 +37903,8 @@ hr {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .navbar ul {

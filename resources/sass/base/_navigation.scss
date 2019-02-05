@@ -1,6 +1,7 @@
 .brand {
 	@apply no-underline text-grey-darkest text-xl;
 	line-height: 1;
+	padding: 0;
 	
 	&:hover {
 		@apply text-grey-darkest;
@@ -52,7 +53,7 @@
 
 .navbar {
 	display: flex;
-	@apply items-center justify-between flex-wrap p-6;
+	@apply items-center justify-between flex-wrap py-6;
 	
 	ul {
 		@apply list-reset;
