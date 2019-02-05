@@ -16,8 +16,8 @@
 		    	<ul class="text-sm lg:flex-grow p-0">
 		    		{{-- <li><a href="">Inspiration</a></li> --}}
 		    		<li><a href="/">Workshops</a></li>
-		    		{{-- <li><a href="/masterminds">Masterminds</a></li>
-		    		<li><a href="/1-on-1">1:1 Sparring</a></li> --}}
+		    		<li><a href="/masterminds">Masterminds</a></li>
+		    		<li><a href="/1-on-1">1:1 Sparring</a></li>
 		    		<li><a href="/om">Om Os</a></li>
 		    	</ul>
 		    <div class="mt-4 lg:mt-0">
