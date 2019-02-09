@@ -16,12 +16,13 @@
 		    	<ul class="text-sm lg:flex-grow p-0">
 		    		{{-- <li><a href="">Inspiration</a></li> --}}
 		    		<li><a href="/">Workshops</a></li>
-		    		<li><a href="/masterminds">Masterminds</a></li>
-		    		<li><a href="/1-on-1">1:1 Sparring</a></li>
-		    		<li><a href="/om">Om Os</a></li>
+		    		{{-- <li><a href="/masterminds">Masterminds</a></li> --}}
+		    		<li><a href="/sparring">1:1 Sparring</a></li>
+		    		<li><a href="/nyhedsbrev">Nyhedsbrev</a></li>
+		    		<li><a href="/kontakt">Kontakt</a></li>
 		    	</ul>
 		    <div class="mt-4 lg:mt-0">
-		      <a href="/#sign-up" class="btn btn btn-sm">Tilmeld dig nu!</a>
+		      <a href="/#sign-up" class="btn btn btn-sm">Workshop starter 1. marts</a>
 		    </div>
 		  </div>
 		</nav>

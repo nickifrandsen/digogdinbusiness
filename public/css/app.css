@@ -37864,19 +37864,6 @@ hr {
   }
 }
 
-.navbar > ul {
-  display: flex;
-}
-
-.navbar > ul > li > a {
-  display: block;
-  padding: 1rem .75rem;
-  color: #f2f4ef;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .nav-items {
   visibility: hidden;
   opacity: 0;
@@ -37914,7 +37901,7 @@ hr {
 
 .navbar li {
   margin-top: 1rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 @media (min-width: 992px) {
@@ -37927,10 +37914,8 @@ hr {
 .navbar li > a {
   display: block;
   color: #f2f4ef;
-  font-weight: 700;
+  font-weight: 600;
   font-size: .875rem;
-  letter-spacing: .05em;
-  text-transform: uppercase;
   text-decoration: none;
 }
 

@@ -21,11 +21,14 @@ Route::get('/', function () {
 Route::get('/masterminds', function () {
     return view('masterminds');
 });
-Route::get('/1-on-1', function () {
+Route::get('/sparring', function () {
     return view('oneonone');
 });
 Route::get('/om', function () {
     return view('about');
+});
+Route::get('/nyhedsbrev', function () {
+    return view('newsletter');
 });
 Route::get('/handelsbetingelser', function () {
     return view('terms');

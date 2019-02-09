@@ -70,7 +70,7 @@
 
 						<section>
 							<!-- Begin Mailchimp Signup Form -->
-							<form action="https://leafr.us14.list-manage.com/subscribe/post?u=72fbcc31f4b758d9e5e6d91b6&amp;id=8aea47f9e5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<form action="https://digogdinbusiness.us20.list-manage.com/subscribe/post?u=9c05a6b2e7024f82f412a839f&amp;id=6f5f6c9e7b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
 								<div class="form-field">
 									<label for="mce-WORKSHOP" class="sr-only">Vælg workshop  <span class="asterisk">*</span></label>
@@ -114,7 +114,7 @@
 									<div class="response" id="mce-success-response" style="display:none"></div>
 								</div>
 
-								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_72fbcc31f4b758d9e5e6d91b6_8aea47f9e5" tabindex="-1" value=""></div>
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9c05a6b2e7024f82f412a839f_6f5f6c9e7b" tabindex="-1" value=""></div>
 
 								<div class="py-4">
 									<button type="submit" value="Tilmeld" name="subscribe" id="mc-embedded-subscribe" class="btn text-sm tracking-wide uppercase rounded">Tilmeld mig workshoppen</button>
@@ -171,5 +171,3 @@
 </script>
 
 @endsection
-
-
