@@ -19,7 +19,7 @@
 		    		{{-- <li><a href="/masterminds">Masterminds</a></li> --}}
 		    		<li><a href="/sparring">1:1 Sparring</a></li>
 		    		<li><a href="/nyhedsbrev">Nyhedsbrev</a></li>
-		    		<li><a href="/kontakt">Kontakt</a></li>
+		    		<li><a href="/om">Om</a></li>
 		    	</ul>
 		    <div class="mt-4 lg:mt-0">
 		      <a href="/#sign-up" class="btn btn btn-sm">Workshop starter 1. marts</a>
