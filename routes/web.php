@@ -15,9 +15,14 @@ Route::get('/home', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('workshops');
-});
+// Route::get('/', function () {
+//     return view('workshops.index');
+// });
+Route::get('/', 'WorkshopsController@index');
+Route::get('workshops', 'WorkshopsController@index');
+Route::get('workshops/tilmeldt', 'WorkshopsController@confirmed');
+Route::post('/workshops/{id}/tilmelding', 'WorkshopsController@store');
+
 Route::get('/masterminds', function () {
     return view('masterminds');
 });

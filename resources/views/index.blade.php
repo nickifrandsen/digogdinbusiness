@@ -68,64 +68,55 @@
 							<p class="text-xl uppercase"><span class="font-black tracking-wide">Online workshop</span><span class="font-normal "> - Tilmeldingsformular </span></p>
 						</header>
 
-						<section>
-							<!-- Begin Mailchimp Signup Form -->
-							<form action="https://digogdinbusiness.us20.list-manage.com/subscribe/post?u=9c05a6b2e7024f82f412a839f&amp;id=6f5f6c9e7b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<section>						
+							<form action="/workshops/1/tilmelding" method="post" id="workshop-signup">
+
+								{{ csrf_field() }}
 
 								<div class="form-field">
-									<label for="mce-WORKSHOP" class="sr-only">Vælg workshop  <span class="asterisk">*</span></label>
-									<select name="WORKSHOP" class="required" id="mce-WORKSHOP">
-										<option value="Dig og Din Business" selected="selected">Dig & Din Business (1.500 DKK)</option>
+									<label for="workshop_id" class="sr-only">Vælg workshop  <span class="asterisk">*</span></label>
+									<select name="workshop_id" class="required" id="workshop_id">
+										<option value="1" selected="selected">Dig & Din Business (1.500 DKK)</option>
 									</select>
 								</div>
 
 								<div class="form-field">
-									<label for="mce-EMAIL" class="sr-only">E-mail  <span class="asterisk">*</span></label>
-									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail">
+									<label for="email" class="sr-only">E-mail  <span class="asterisk">*</span></label>
+									<input type="email" value="" name="email" class="required email" id="email" placeholder="E-mail">
 								</div>
 
 								<div class="form-field flex flex-wrap">
 									<div class="w-full md:w-1/2 md:pr-2 mb-4 md:mb-0">
-										<label for="mce-FNAME" class="sr-only">Fornavn  <span class="asterisk">*</span></label>
-										<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="Fornavn">
+										<label for="first_name" class="sr-only">Fornavn  <span class="asterisk">*</span></label>
+										<input type="text" value="" name="first_name" class="required" id="first_name" placeholder="Fornavn">
 									</div>
 
 									<div class="w-full md:w-1/2 md:pl-2">
-										<label for="mce-LNAME" class="sr-only">Efternavn  <span class="asterisk">*</span></label>
-										<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" placeholder="Efternavn">
+										<label for="last_name" class="sr-only">Efternavn  <span class="asterisk">*</span></label>
+										<input type="text" value="" name="last_name" class="required" id="last_name" placeholder="Efternavn">
 									</div>
 								</div>
 								<div class="form-field">
-									<label for="mce-EXPECT" class="sr-only">Hvad er dine forventninger til workshoppen?<span class="asterisk">*</span></label>
-									<input type="text" value="" name="EXPECT" class="required" id="mce-EXPECT" placeholder="Hvad er dine forventninger til workshoppen?">
+									<label for="questions[your_expectations]" class="sr-only">Hvad er dine forventninger til workshoppen?<span class="asterisk">*</span></label>
+									<input type="text" value="" name="questions[your_expectations]" class="required" id="questions[your_expectations]" placeholder="Hvad er dine forventninger til workshoppen?">
 								</div>
 								<div class="form-field has-radio">
-									<input type="radio" value="Ja" name="BUSINESS" id="mce-BUSINESS-0"> 
-									<label for="mce-BUSINESS-0">Jeg har allerede en business</label>
+									<input type="radio" value="1" name="has_business" id="has_business_1"> 
+									<label for="has_business_1">Jeg har allerede en business</label>
 								</div>
 								<div class="form-field has-radio">
-									<input type="radio" value="Nej" name="BUSINESS" id="mce-BUSINESS-1"> 
-									<label for="mce-BUSINESS-1">Jeg overvejer at starte en business</label>
+									<input type="radio" value="0" name="has_business" id="has_business_2"> 
+									<label for="has_business_2">Jeg overvejer at starte en business</label>
 								</div>
-
-
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>
-
-								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9c05a6b2e7024f82f412a839f_6f5f6c9e7b" tabindex="-1" value=""></div>
 
 								<div class="py-4">
-									<button type="submit" value="Tilmeld" name="subscribe" id="mc-embedded-subscribe" class="btn text-sm tracking-wide uppercase rounded">Tilmeld mig workshoppen</button>
+									<button type="submit" value="Tilmeld" name="attend" id="attend" class="btn text-sm tracking-wide uppercase rounded">Tilmeld mig workshoppen</button>
 								</div>
 
 								<p class="text-sm">Efter du har tilmeldt dig via formularen her, så modtager du en mail med betalingslink (obs. der kan gå op til 24 timer). Når du har betalt denne er du tilmeldt workshoppen.</p>
 								{{-- //og vil løbene bliv holdt opdateret pr. mail. Et par dage før workshoppens start modtager du en invitation til et lukket fora, hvor du kan stille spørgsmål og netværke med andre deltagere. --}}
 
 							</form>
-
-							<!--End mc_embed_signup-->
 						</section>
 
 
