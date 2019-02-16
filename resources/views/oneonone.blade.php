@@ -21,15 +21,13 @@
 			<div class="w-full mx-auto lg:w-2/3">
 
 				<div class="pb-6">
-					<h1 class="text-center pb-4 font-normal text-xl uppercase">Sparringsforløb og sessions<br><span class="font-black uppercase text-5xl" style="line-height: 1;">1:1 Sparring</span></h1>
+					<h1 class="text-center pb-4 font-normal text-xl uppercase">Sparringsforløb og sessions<br><span class="font-bold uppercase text-5xl">1:1 Sparring</span></h1>
 					<p class="text-center text-2xl">Individuelle sparringsforløb tilpasset til dig og den specifikke situation du og din business står i.</p>
 				</div>
 
 				<div class="pb-6 is-content">
-					<p>Offentliggøres snarest.</p>
+					<p>Send en mail til <a href="mailto:info@digogdinbusiness">info@digogdinbusiness.dk</a>, hvor du beskriver din konkrete situation, og hvilke udfordringer du står overfor, så tilrettelægger vi sammen et sparringsforløb, der passer til dine behov.</p>
 				</div>
-
-
 			</div>
 		</div>
 	</section>

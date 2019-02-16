@@ -18,10 +18,12 @@
 
 		<div class="container">
 
-			<div class="w-full mx-auto lg:w-2/3">
+			<div class="w-full mx-auto xl:w-2/3">
 
 				<div class="pb-6">
-					<h1 class="text-center pb-4 font-normal text-xl uppercase">Online workshop<br><span class="font-black uppercase text-5xl" style="line-height: 1;">Dig & din<br>business</span></h1>
+					<h1 class="text-center pb-4 font-normal text-xl uppercase">Online workshop<br>
+						<span class="font-bold uppercase text-5xl">Dig & din<br>business</span>
+					</h1>
 					<p class="text-center text-2xl">Sådan skaber du en business, der er i tråd med dine værdier, og hvor hverdagen macther dine drømme om frihed og fleksibilitet.</p>
 				</div>
 
@@ -57,9 +59,13 @@
 				</section>
 
 				<div class="text-center py-6">
-					<p class="font-bold">Workshoppen starter 1. marts 2019 og varer 6 uger</p>
-					<p class="text-grey-dark font-normal text-base">Pris <span class="text-4xl text-black tracking-wide">1.500</span> DKK</p>
+					<p class="font-bold">Online workshoppen skydes igang 1. marts 2019 og varer 6 uger</p>
+					<p class="leading-loose"><span class="text-xl">Med en investering på <span class="text-black">1.500</span> DKK får du en klar retning for din business. <br>En business, som matcher dine værdier og passer til din livsstil.</span><br>
+						<span class="text-grey-dark font-normal">Det svarer til prisen på to konsulenttimer og så er det ikke sikkert, at de forstår dig eller din business. Bliv ekspert i din business - der er ikke andre, der er det.</span>
+					</p>
+					<p><span class=" text-black tracking-wide text-3xl">1.500</span> DKK </p>
 					<button type="button" id="sign-up" class="btn text-sm tracking-wide uppercase rounded" @click="toggleModal">Tilmeld dig nu</button>
+					
 				</div>
 
 				<div v-if="modal" @click.self="toggleModal" class="modal animated fadeIn">
@@ -131,19 +137,19 @@
 
 
 
-	<script src="https://js.stripe.com/v3/"></script>
+	
 
-{{-- 	<form action="/purchases" method="POST">
+	<form action="/purchases" method="POST">
 		{{ csrf_field() }}
 		<button type="submit">Tilmeld mig nu</button>
-	</form> --}}
+	</form>
 
 </article>
 
 @endsection
 
 @section('scripts')
-
+<script src="https://js.stripe.com/v3/"></script>
 <script>
 	let stripe = StripeCheckout.configure({
 		key: "{{ config('services.stripe.key') }}",

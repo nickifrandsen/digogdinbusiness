@@ -37575,7 +37575,7 @@ select {
   border-radius: .25rem;
   line-height: 1.25;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-  background: url(../images/caret.svg) 97%/3% no-repeat;
+  background: url(../svg/ios-arrow-down.svg) 97%/3% no-repeat;
 }
 
 select:focus {
@@ -37927,6 +37927,10 @@ body.has-modal {
   overflow: hidden;
 }
 
+body.has-modal .modal {
+  display: flex;
+}
+
 .modal {
   position: fixed;
   z-index: 50;
@@ -37936,7 +37940,7 @@ body.has-modal {
   left: 0;
   overflow: auto;
   background-color: rgba(0, 0, 0, .6);
-  display: flex;
+  display: none;
 }
 
 @media (min-width: 768px) {

@@ -10,7 +10,7 @@
 
 select {
 	@apply block appearance-none w-full border bg-white py-3 px-3 pr-8 rounded leading-tight shadow;
-	background: url(../images/caret.svg) 97%/3% no-repeat;
+	background: url(../svg/ios-arrow-down.svg) 97%/3% no-repeat;
 	  
 	&:focus {
 		@apply border-blue-dark outline-none;

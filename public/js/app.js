@@ -11684,7 +11684,7 @@ var app = new Vue({
   },
   methods: {
     toggleModal: function toggleModal() {
-      document.body.className += 'has-modal';
+      document.body.classList.toggle('has-modal');
       this.modal = !this.modal;
     }
   }

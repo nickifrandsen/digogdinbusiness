@@ -1,10 +1,13 @@
 body.has-modal {
 	overflow: hidden;
+	.modal {
+		display: flex;
+	}
 }
 
 .modal {
 	@apply fixed z-50 pin overflow-auto bg-smoke-dark ;
-	display: flex;
+	display: none;
 	
 	@media (min-width: $screen-md) {
 		@apply fixed;
