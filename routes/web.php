@@ -22,6 +22,7 @@ Route::get('/', 'WorkshopsController@index');
 Route::get('workshops', 'WorkshopsController@index');
 Route::get('workshops/tilmeldt', 'WorkshopsController@confirmed');
 Route::post('/workshops/{id}/tilmelding', 'WorkshopsController@store');
+Route::get('/betaling', 'PurchasesController@payment')->name('payment');
 
 Route::get('/masterminds', function () {
     return view('masterminds');

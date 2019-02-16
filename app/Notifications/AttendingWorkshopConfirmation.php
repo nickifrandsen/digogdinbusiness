@@ -7,7 +7,7 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class AttendingWorkshopConfirmation extends Notification
+class AttendingWorkshopConfirmation extends Notification implements ShouldQueue
 {
     use Queueable;
 
@@ -42,8 +42,8 @@ class AttendingWorkshopConfirmation extends Notification
     {
 
           return (new MailMessage)
-                ->subject('Invoice Paid')
-                ->markdown('mail.workshop.confirmation', ['attendee' => $notifiable]);
+                ->subject('Vi har modtaget din tilmelding')
+                ->markdown('emails.workshop.confirmation', ['attendee' => $notifiable]);
     }
 
     /**

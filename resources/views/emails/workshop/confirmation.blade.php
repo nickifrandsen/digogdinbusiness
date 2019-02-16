@@ -28,6 +28,6 @@ Info og nyttige links: &nbsp;&nbsp;&nbsp; [Website](https://digogdinbusiness.dk)
 [Facebook](https://www.facebook.com/digogdinbusiness/) &nbsp;&nbsp;&nbsp;
 
 @endcomponent
-
+<img src="http://digogdinbusiness.local/storage/digogdinbusiness_v2.png" alt="Dig & Din Business logo" width="150">
 @endcomponent
 

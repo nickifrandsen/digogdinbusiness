@@ -9,6 +9,11 @@ use Stripe\{Stripe, Charge, Customer};
 class PurchasesController extends Controller
 {
 
+	public function payment(\App\WorkshopAttendee $attendee)
+	{
+		return view('workshops.payment', compact('attendee'));
+	}
+
 	public function store()
 	{
 		Stripe::setApiKey( config('services.stripe.secret') );

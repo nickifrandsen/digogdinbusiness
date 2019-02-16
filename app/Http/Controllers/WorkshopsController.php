@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Notifications\BookingRequest;
 use Illuminate\Support\Facades\Validator;
 use App\Notifications\AttendingWorkshopConfirmation;
+use App\Mail\NewAttendee;
+use Illuminate\Support\Facades\Mail;
 
 class WorkshopsController extends Controller
 {
@@ -41,6 +43,7 @@ class WorkshopsController extends Controller
         	// flash('Tak for din henvendelse. Jeg kontakter dig indenfor 48 timer.')->success();
 
         	$attendee->notify(new AttendingWorkshopConfirmation($attendee));
+        	Mail::to('nf@nickifrandsen.dk')->queue(new NewAttendee($attendee));
 
         	return redirect('workshops/tilmeldt');
         }
