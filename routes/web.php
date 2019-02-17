@@ -16,6 +16,7 @@ Route::get('home', 'PageController@index');
 Route::get('sparring', 'PageController@coaching');
 Route::get('handelsbetingelser', 'PageController@terms');
 Route::get('privatlivspolitik', 'PageController@privacyPolicy');
+Route::get('nyhedsbrev', 'PageController@newsletter');
 
 Route::get('workshops', 'WorkshopsController@index');
 Route::get('workshops/tilmeldt', 'WorkshopsController@confirmed');

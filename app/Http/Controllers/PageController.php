@@ -16,6 +16,11 @@ class PageController extends Controller
 		return view('terms');
     }
 
+    public function newsletter()
+    {
+		return view('newsletter');
+    }
+
     public function privacyPolicy()
     {
     	return view('privacy');
