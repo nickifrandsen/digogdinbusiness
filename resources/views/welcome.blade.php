@@ -17,13 +17,16 @@
 	<section class="mb-12 py-12">
 
 			<div class="w-full md:w-3/4 md:mx-auto py-12 text-center">
-				<h1 class="text-4xl font-bold leading-tight">
-					Hvordan ser en bedre business ud for dig? <br>
+				<h1 class="text-4xl font-normal leading-tight">
+					Hvordan ser en <span class="font-extrabold">bedre</span> business ud for <span class="font-extrabold">dig</span>? <br>
 				
 				{{-- <br>
 				<span class="text-3xl">Her handler det om dig og din business</span> --}}
 				</h1>
-				<p class="text-2xl font-light leading-tight">Hvis det ikke handler om vækst for enhver pris, med derimod om frihed og fleksibilitet til at udleve dine drømme <b class="font-bold">hver dag</b>, så er du kommet til det rette sted.</p>
+				<p class="text-xl font-light">Lær at kortlægge dine værdier, forstå dine kunder og navigere din business hjælper vi dig med at skabe en business, som passer til det liv du gerne vil leve. <br><span>Her handler det om dig og din business.</b></p> 
+				
+					{{-- <br>Hvis det ikke handler om vækst for enhver pris, med derimod om frihed og fleksibilitet til at udleve dine drømme <b class="font-bold">hver dag</b>, så er du kommet til det rette sted. --}}
+				
 			</div>
 			{{-- <div class="w-full">
 				En business i vækst er et menneske i vækst og vækst er meget andet end flere ansatte og højere omsætning.
