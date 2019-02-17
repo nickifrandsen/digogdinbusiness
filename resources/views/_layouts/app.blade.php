@@ -10,7 +10,7 @@
 
     @include('_meta.base')
 
-	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
 <body>
 
@@ -26,7 +26,7 @@
 
 	</div>
 	
-	<script src="/js/app.js"></script>
+	<script src="{{ mix('/js/app.js') }}"></script>
 
 	@yield('scripts')
 
