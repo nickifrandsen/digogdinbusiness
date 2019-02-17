@@ -137,24 +137,3 @@
 </article>
 
 @endsection
-
-@section('scripts')
-<script src="https://js.stripe.com/v3/"></script>
-<script>
-	let stripe = StripeCheckout.configure({
-		key: "{{ config('services.stripe.key') }}",
-		image: '',
-		locale: 'auto'
-	});
-
-	document.querySelector('button').addEventListener('click', function () {
-		stripe.open({
-			name: 'Dig & Din Business',
-			description: 'Online workshop',
-			amount: 150000,
-			currency: 'dkk'
-		})
-	});
-</script>
-
-@endsection
