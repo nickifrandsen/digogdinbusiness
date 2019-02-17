@@ -134,16 +134,6 @@
 			</div>
 		</div>
 	</section>
-
-
-
-	
-
-	<form action="/purchases" method="POST">
-		{{ csrf_field() }}
-		<button type="submit">Tilmeld mig nu</button>
-	</form>
-
 </article>
 
 @endsection
