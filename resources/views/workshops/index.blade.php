@@ -27,6 +27,8 @@
 					<p class="text-center text-2xl">Sådan skaber du en business, der er i tråd med dine værdier, og hvor hverdagen macther dine drømme om frihed og fleksibilitet.</p>
 				</div>
 
+				
+
 				<div class="pb-6">
 					<p>Har du mistet overblikket over din business, er du kørt sur i livet som selvstændig, eller overvejer du at starte din egen business, så er <i>Dig & Din Business</i> den online workshop som du har ventet på.</p>
 

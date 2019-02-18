@@ -3,14 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\WorkshopAttendee;
 use Stripe\{Stripe, Charge, Customer};
 
 
 class PurchasesController extends Controller
 {
 
-	public function payment(\App\WorkshopAttendee $attendee)
+	public function index($id)
 	{
+		$attendee = WorkshopAttendee::findOrFail($id);
+
 		return view('workshops.payment', compact('attendee'));
 	}
 
@@ -18,16 +21,22 @@ class PurchasesController extends Controller
 	{
 		Stripe::setApiKey( config('services.stripe.secret') );
 
-		  $customer = Customer::create([
-		      'email' => request('stripeEmail'),
-		      'source'  => request('stripeToken'),
-		  ]);
+		$customer = Customer::create([
+			'email' => request('stripeEmail'),
+			'source'  => request('stripeToken'),
+		]);
 
-		  $charge = Charge::create([
-		      'customer' => $customer->id,
-		      'sku' => 'sku_EQij3hJCGIXLRn', 
-		      'quantity' => 1,
-		      'currency' => 'DKK',
-		  ]);
+		Charge::create([
+			'customer' => $customer->id,
+			'amount' => 150000,
+		    'currency' => 'dkk',
+		    'description' => 'Dig & Din Business Online Workshop',
+		    'metadata' => [],
+		    'receipt_email' => $customer->email,
+		]);
+
+
+
+		return redirect('workshops/tilmeldt');
 	}
 }

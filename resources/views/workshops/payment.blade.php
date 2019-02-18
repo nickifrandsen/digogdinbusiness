@@ -14,28 +14,21 @@
 
 <article class="container article-content is-content">
 
-	<section class="mb-12 py-12">
+	<section class="mb-12 py-24">
 
 		<div class="container">
 
 			<div class="w-full">
 
 				<div class="pb-6 text-center">
-					<form action="/charge" method="post" id="payment-form">
-						<div class="form-row">
-							<label for="card-element">
-								Credit or debit card
-							</label>
-							<div id="card-element">
-								<!-- A Stripe Element will be inserted here. -->
-							</div>
-
-							<!-- Used to display form errors. -->
-							<div id="card-errors" role="alert"></div>
-						</div>
-
-						<button>Submit Payment</button>
-					</form>
+					<p>Hej {{ $attendee->first_name }}, <br>
+					Her er dit betalingslink til {{ $attendee->workshop->title }} på {{ $attendee->workshop->unit_price }} DKK</p>
+					<p>
+						Med venlig hilsen <br>
+						Nicki Frandsen <br>
+						Dig & Din Business
+					</p>
+				 	<checkout-form email="{{ $attendee->email }}"></checkout-form>
 				</div>
 
 				<div class="pb-6 is-content">

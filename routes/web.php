@@ -22,3 +22,6 @@ Route::get('om', 'PageController@about');
 Route::get('workshops', 'WorkshopsController@index');
 Route::get('workshops/tilmeldt', 'WorkshopsController@confirmed');
 Route::post('workshops/{id}/tilmelding', 'WorkshopsController@store');
+
+Route::get('workshops/betaling/{id}', 'PurchasesController@index');
+Route::post('workshops/betaling', 'PurchasesController@store');

@@ -12,6 +12,13 @@
 
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
+	<script>
+		var Business = {
+			csrfToken: "{{ csrf_token() }}",
+			stripeKey: "{{ config('services.stripe.key') }}"
+		}
+	</script>
+
 <body>
 
 	<div id="app">
@@ -25,12 +32,12 @@
 		@include('_partials.footer')
 
 	</div>
-	
+	<script src="https://checkout.stripe.com/checkout.js"></script>
 	<script src="{{ mix('/js/app.js') }}"></script>
-
+	
 	@yield('scripts')
 
-	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9c05a6b2e7024f82f412a839f/faf61c151f4c9fad9a51eb72f.js");</script>
+	<script id="mcjs" async>!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9c05a6b2e7024f82f412a839f/faf61c151f4c9fad9a51eb72f.js");</script>
 
 </body>
 </html>

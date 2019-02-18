@@ -2,7 +2,7 @@
 Hej {{ $attendee->first_name}},
 
 Vi har modtaget din anmodning om at deltage i workshoppen {{ $attendee->workshop->title }} og du er næsten klar. 
-Inden for 24 timer modtager du et betalingslink. Når du har gennemført betalingen er du endeligt tilmeldt til online workshoppen.
+Når du har gennemført betalingen er du endeligt tilmeldt til online workshoppen.
 
 **Pris:** 1.500 DKK <br>
 **Startdato:** 1. marts 2019
@@ -11,7 +11,7 @@ Tjek venligst at nedenstående informationer er korrekte.
 
 **Navn:** {{ $attendee->first_name }} {{ $attendee->last_name }} <br>
 **Forventninger til workshoppen:** {{ $attendee->questions['your_expectations'] ?? 'Ikke angivet' }} <br>
-**Har du allerede en business:** {{ $attendee->has_business ?? 'Ikke angivet' }} <br>
+**Har du allerede en business:** {{ $attendee->render_has_business ?? 'Ikke angivet' }} <br>
 
 Mange hilsner <br>
 Nicki Frandsen <br>

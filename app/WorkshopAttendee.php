@@ -28,4 +28,21 @@ class WorkshopAttendee extends Model
     {
         return $this->belongsTo('App\Workshop');
     }
+
+    public function getAttributeRenderHasBusiness()
+    {
+    	switch ($this->has_business) {
+    		case 0:
+    			return 'Nej';
+    			break;
+
+    		case 1:
+    			return 'Ja';
+    			break;
+    		
+    		default:
+    			return 'Ikke angivet';
+    			break;
+    	}
+    }
 }

@@ -17,7 +17,7 @@ class WorkshopsController extends Controller
 		return view('workshops.index');
 	}    
 
-	   public function store(Request $request)
+	public function store(Request $request)
     {
 
 		$messages = [
@@ -45,7 +45,7 @@ class WorkshopsController extends Controller
         	$attendee->notify(new AttendingWorkshopConfirmation($attendee));
         	Mail::to('nf@nickifrandsen.dk')->queue(new NewAttendee($attendee));
 
-        	return redirect('workshops/tilmeldt');
+        	return redirect('workshops/betaling/' . $attendee->id);
         }
 
         return back();
