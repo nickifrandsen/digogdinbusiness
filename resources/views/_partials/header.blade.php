@@ -21,9 +21,9 @@
 		    		<li><a href="/nyhedsbrev">Nyhedsbrev</a></li>
 		    		<li><a href="/om">Om</a></li>
 		    	</ul>
-		    <div class="mt-4 lg:mt-0">
+		    {{-- <div class="mt-4 lg:mt-0">
 		      <a href="/#sign-up" class="btn btn btn-sm">Workshop starter 1. marts</a>
-		    </div>
+		    </div> --}}
 		  </div>
 		</nav>
 	</div>

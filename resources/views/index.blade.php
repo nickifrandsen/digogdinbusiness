@@ -57,7 +57,7 @@
 				</section>
 
 				<div class="text-center py-6">
-					<p class="font-bold">Workshoppen starter 1. marts 2019 og varer 6 uger</p>
+					<p class="font-bold">Workshoppen varer 6 uger</p>
 					<p class="text-grey-dark font-normal text-base">Pris <span class="text-4xl text-black tracking-wide">1.500</span> DKK</p>
 					<button type="button" id="sign-up" class="btn text-sm tracking-wide uppercase rounded" @click="toggleModal">Tilmeld dig nu</button>
 				</div>

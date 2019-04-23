@@ -1,6 +1,6 @@
 require('./bootstrap');
 
-Vue.component('checkout-form', require('./components/CheckoutForm.vue').default);
+Vue.component('checkout-form');
 
 
 const app = new Vue({

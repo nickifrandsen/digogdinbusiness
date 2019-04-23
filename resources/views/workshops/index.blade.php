@@ -61,7 +61,7 @@
 				</section>
 
 				<div class="text-center py-6">
-					<p class="font-bold">Online workshoppen skydes igang 1. marts 2019 og varer 6 uger</p>
+					<p class="font-bold">Online workshoppen varer 6 uger</p>
 					<p class="leading-loose"><span class="text-xl">Med en investering på <span class="text-black">1.500</span> DKK får du en klar retning for din business. <br>En business, som matcher dine værdier og passer til din livsstil.</span><br>
 						<span class="text-grey-dark font-normal">Det svarer til prisen på to konsulenttimer og så er det ikke sikkert, at de forstår dig eller din business. Bliv ekspert i din business - der er ikke andre, der er det.</span>
 					</p>
@@ -123,7 +123,6 @@
 
 								<p class="text-sm">Efter du har tilmeldt dig via formularen her, så modtager du en mail med betalingslink (obs. der kan gå op til 24 timer). Når du har betalt denne er du tilmeldt workshoppen.</p>
 								{{-- //og vil løbene bliv holdt opdateret pr. mail. Et par dage før workshoppens start modtager du en invitation til et lukket fora, hvor du kan stille spørgsmål og netværke med andre deltagere. --}}
-
 							</form>
 						</section>
 
