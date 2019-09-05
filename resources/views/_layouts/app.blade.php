@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    @include('_meta.base')
+    @yield('meta')
 
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 

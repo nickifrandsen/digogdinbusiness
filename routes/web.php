@@ -10,9 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'WorkshopsController@index');
-
-Route::get('home', 'PageController@index');
+Route::get('/', 'PageController@index');
 Route::get('sparring', 'PageController@coaching');
 Route::get('handelsbetingelser', 'PageController@terms');
 Route::get('privatlivspolitik', 'PageController@privacyPolicy');

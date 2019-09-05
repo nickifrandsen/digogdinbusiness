@@ -12,10 +12,11 @@
 		     <i class="ion-ios-menu"></i>&nbsp;&nbsp;Menu
 		    </button>
 		  </div>
-		  <div id="nav-items" class="block flex-grow lg:flex lg:items-center lg:w-auto nav-items">
+		  <div id="nav-items" class="block flex-grow align-item-end lg:flex lg:items-center lg:w-auto nav-items">
 		    	<ul class="text-sm lg:flex-grow p-0">
 		    		{{-- <li><a href="">Inspiration</a></li> --}}
-		    		<li><a href="/">Workshops</a></li>
+		    		<li><a href="/">Resourcer</a></li>
+		    		<li><a href="/workshops">Workshops</a></li>
 		    		{{-- <li><a href="/masterminds">Masterminds</a></li> --}}
 		    		<li><a href="/sparring">1:1 Sparring</a></li>
 		    		<li><a href="/nyhedsbrev">Nyhedsbrev</a></li>

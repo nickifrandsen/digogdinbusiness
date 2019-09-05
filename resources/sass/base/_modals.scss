@@ -7,7 +7,6 @@ body.has-modal {
 
 .modal {
 	@apply fixed z-50 pin overflow-auto bg-smoke-dark ;
-	display: none;
 	
 	@media (min-width: $screen-md) {
 		@apply fixed;

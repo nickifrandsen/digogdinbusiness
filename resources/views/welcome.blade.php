@@ -23,7 +23,7 @@
 				{{-- <br>
 				<span class="text-3xl">Her handler det om dig og din business</span> --}}
 				</h1>
-				<p class="text-xl font-light">Lær at kortlægge dine værdier, forstå dine kunder og navigere din business hjælper vi dig med at skabe en business, som passer til det liv du gerne vil leve. <br><span>Her handler det om dig og din business.</b></p> 
+				<p class="text-xl font-light">Lær at kortlægge dine værdier, forstå dine kunder og navigere din business. Jeg hjælper vi dig med at skabe en business, som passer til det liv du gerne vil leve.</p> 
 				
 					{{-- <br>Hvis det ikke handler om vækst for enhver pris, med derimod om frihed og fleksibilitet til at udleve dine drømme <b class="font-bold">hver dag</b>, så er du kommet til det rette sted. --}}
 				
@@ -46,7 +46,7 @@
 				<div class="sm:w-1/3 sm:pr-6">
 					<h3>Workshops</h3>
 					<p>Med et online workshop forløb er det ligemeget, hvor du befinder dig, så modtager du alle ressourcerne og øvelserne til at skabe en bedre business direkte i din indbakke.</p>
-					<a href="/workshops">Se alle worshops...</a>
+					<a href="/workshops" class="btn btn-link">Se alle worshops</a>
 				</div>
 				<div class="sm:w-1/3 sm:px-3">
 					<h3>1:1 Sparring</h3>
