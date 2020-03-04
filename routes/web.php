@@ -11,6 +11,7 @@
 |
 */
 Route::get('/', 'PageController@index');
+Route::get('business-intelligence', 'PageController@bi');
 Route::get('sparring', 'PageController@coaching');
 Route::get('handelsbetingelser', 'PageController@terms');
 Route::get('privatlivspolitik', 'PageController@privacyPolicy');

@@ -15,7 +15,7 @@
 		  <div id="nav-items" class="block flex-grow align-item-end lg:flex lg:items-center lg:w-auto nav-items">
 		    	<ul class="text-sm lg:flex-grow p-0 text-right">
 		    		{{-- <li><a href="">Inspiration</a></li> --}}
-		    		<li><a href="/">Business Intelligence</a></li>
+		    		<li><a href="/business-intelligence">Business Intelligence</a></li>
 		    		{{-- <li><a href="/masterminds">Masterminds</a></li> --}}
 		    		<li><a href="/sparring">1:1 Sparring</a></li>
 		    		<li><a href="/workshops">Workshops</a></li>

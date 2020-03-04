@@ -16,6 +16,11 @@ class PageController extends Controller
 		return view('terms');
     }
 
+    public function bi()
+    {
+		return view('business-intelligence');
+    }
+
     public function newsletter()
     {
 		return view('newsletter');
