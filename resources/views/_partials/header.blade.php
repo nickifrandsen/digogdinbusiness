@@ -2,8 +2,8 @@
 	<div class="container">
 		<nav id="main-nav" class="navbar">
 		  <div class="flex items-center flex-no-shrink mr-6">
-		    <a href="/" title="Forside" class="brand">
-			   <img src="{{ asset('storage/digogdinbusiness_light.png') }}" alt="Dig & Din Business">
+		    <a href="/" title="Forside" class="text-white text-2xl no-underline hover:text-white">
+			   dig & din business
 			</a>
 		  </div>
 		  <div class="block lg:hidden">
@@ -13,12 +13,12 @@
 		    </button>
 		  </div>
 		  <div id="nav-items" class="block flex-grow align-item-end lg:flex lg:items-center lg:w-auto nav-items">
-		    	<ul class="text-sm lg:flex-grow p-0">
+		    	<ul class="text-sm lg:flex-grow p-0 text-right">
 		    		{{-- <li><a href="">Inspiration</a></li> --}}
-		    		<li><a href="/">Resourcer</a></li>
-		    		<li><a href="/workshops">Workshops</a></li>
+		    		<li><a href="/">Business Intelligence</a></li>
 		    		{{-- <li><a href="/masterminds">Masterminds</a></li> --}}
 		    		<li><a href="/sparring">1:1 Sparring</a></li>
+		    		<li><a href="/workshops">Workshops</a></li>
 		    		<li><a href="/nyhedsbrev">Nyhedsbrev</a></li>
 		    		<li><a href="/om">Om</a></li>
 		    	</ul>

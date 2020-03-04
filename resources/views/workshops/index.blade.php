@@ -40,7 +40,13 @@
 					<p>Drømmer du om en business, der matcher dit liv. Et liv, hvor der er plads til at gøre de ting du elsker og drømmer om. Ikke bare når du holder fri, men hver eneste dag fra du vågner til du går i seng. Så er du kommet til det rette sted. <i>Dig & Din Business</i> er et workshop-forløb for dig der gerne vil drive en business i tråd med andre områder af dit liv. En business, hvor dine værdier vægter højere end jagten på årlig økonomisk vækst. En business, hvor du og din kunde er i centrum. Og en business, som understøtter den måde du gerne vil arbejde på. </p><p>Det er et opgør med illusionenen om, at en større business er en bedre business. En bedre business er en business, der passer bedre til det liv du gerne vil leve. En bedre business er en livsstil, hvor arbejde og fritid smelter sammen på en mere harmonisk måde.</p>
 					<p>Det er muligt - og det er muligt for dig.</p>
 				</div>
+				
+				<div class="mt-8 p-6 bg-gray-200">
+					<p class="text-3xl text-center">Følg med her på siden for nye datoer</p>
+				</div>
 
+
+				{{-- 
 				<h2>Workshoppens Indhold</h2>
 				<p>I løbet af 6 uger får du konkrete værktøjer til, hvordan du kan skabe en business, som du trives med. En business, hvor der er plads til dig og dine drømme - både professionelt og personligt.</p>
 				<p></p>
@@ -127,15 +133,16 @@
 								</div>
 
 								<p class="text-sm">Efter du har tilmeldt dig via formularen her, så modtager du en mail med betalingslink (obs. der kan gå op til 24 timer). Når du har betalt denne er du tilmeldt workshoppen.</p>
-								{{-- //og vil løbene bliv holdt opdateret pr. mail. Et par dage før workshoppens start modtager du en invitation til et lukket fora, hvor du kan stille spørgsmål og netværke med andre deltagere. --}}
+								 //og vil løbene bliv holdt opdateret pr. mail. Et par dage før workshoppens start modtager du en invitation til et lukket fora, hvor du kan stille spørgsmål og netværke med andre deltagere. 
 							</form>
 						</section>
-
+						
 
 						<span @click="toggleModal" class="absolute pin-t pin-r pt-4 px-4">
 							<button type="button" title="Luk"><i class="ionicons ion-ios-close"></i></button>
 						</span>
 					</div>
+				 --}}
 				</div>
 			</div>
 		</div>
