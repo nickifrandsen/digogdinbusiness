@@ -49,7 +49,8 @@
 
 					<ul>
 						<li><b>Workshops</b></li>
-						<li><b>Masterminds</b></li>
+						<li><b>Vidensdeling</b></li>
+						<li><b>Business Intelligence</b></li>
 						<li><b>1-til-1 sparring</b></li>
 					</ul>
 
