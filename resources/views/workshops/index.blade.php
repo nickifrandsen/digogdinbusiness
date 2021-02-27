@@ -32,7 +32,7 @@
 					<p class="text-center text-2xl">Sådan skaber du en business, der er i tråd med dine værdier, og hvor hverdagen macther dine drømme om frihed og fleksibilitet.</p>
 				</div>
 
-				
+
 
 				<div class="pb-6">
 					<p>Har du mistet overblikket over din business, er du kørt sur i livet som selvstændig, eller overvejer du at starte din egen business, så er <i>Dig & Din Business</i> den online workshop som du har ventet på.</p>
@@ -40,13 +40,11 @@
 					<p>Drømmer du om en business, der matcher dit liv. Et liv, hvor der er plads til at gøre de ting du elsker og drømmer om. Ikke bare når du holder fri, men hver eneste dag fra du vågner til du går i seng. Så er du kommet til det rette sted. <i>Dig & Din Business</i> er et workshop-forløb for dig der gerne vil drive en business i tråd med andre områder af dit liv. En business, hvor dine værdier vægter højere end jagten på årlig økonomisk vækst. En business, hvor du og din kunde er i centrum. Og en business, som understøtter den måde du gerne vil arbejde på. </p><p>Det er et opgør med illusionenen om, at en større business er en bedre business. En bedre business er en business, der passer bedre til det liv du gerne vil leve. En bedre business er en livsstil, hvor arbejde og fritid smelter sammen på en mere harmonisk måde.</p>
 					<p>Det er muligt - og det er muligt for dig.</p>
 				</div>
-				
+
 				<div class="mt-8 p-6 bg-gray-200">
 					<p class="text-3xl text-center">Følg med her på siden for nye datoer</p>
 				</div>
 
-
-				{{-- 
 				<h2>Workshoppens Indhold</h2>
 				<p>I løbet af 6 uger får du konkrete værktøjer til, hvordan du kan skabe en business, som du trives med. En business, hvor der er plads til dig og dine drømme - både professionelt og personligt.</p>
 				<p></p>
@@ -73,12 +71,13 @@
 
 				<div class="text-center py-6">
 					<p class="font-bold">Online workshoppen varer 6 uger</p>
+					{{--
 					<p class="leading-loose"><span class="text-xl">Med en investering på <span class="text-black">1.500</span> DKK får du en klar retning for din business. <br>En business, som matcher dine værdier og passer til din livsstil.</span><br>
 						<span class="text-grey-dark font-normal">Det svarer til prisen på to konsulenttimer og så er det ikke sikkert, at de forstår dig eller din business. Bliv ekspert i din business - der er ikke andre, der er det.</span>
 					</p>
 					<p><span class=" text-black tracking-wide text-3xl">1.500</span> DKK </p>
 					<button type="button" id="sign-up" class="btn text-sm tracking-wide uppercase rounded" @click="toggleModal">Tilmeld dig nu</button>
-					
+					--}}
 				</div>
 
 				<div v-if="modal" @click.self="toggleModal" class="modal animated fadeIn">
@@ -87,7 +86,7 @@
 							<p class="text-xl uppercase"><span class="font-black tracking-wide">Online workshop</span><span class="font-normal "> - Tilmeldingsformular </span></p>
 						</header>
 
-						<section>						
+						<section>
 							<form action="/workshops/1/tilmelding" method="post" id="workshop-signup">
 
 								{{ csrf_field() }}
@@ -120,11 +119,11 @@
 									<input type="text" value="" name="questions[your_expectations]" class="required" id="questions[your_expectations]" placeholder="Hvad er dine forventninger til workshoppen?">
 								</div>
 								<div class="form-field has-radio">
-									<input type="radio" value="1" name="has_business" id="has_business_1"> 
+									<input type="radio" value="1" name="has_business" id="has_business_1">
 									<label for="has_business_1">Jeg har allerede en business</label>
 								</div>
 								<div class="form-field has-radio">
-									<input type="radio" value="0" name="has_business" id="has_business_2"> 
+									<input type="radio" value="0" name="has_business" id="has_business_2">
 									<label for="has_business_2">Jeg overvejer at starte en business</label>
 								</div>
 
@@ -133,16 +132,16 @@
 								</div>
 
 								<p class="text-sm">Efter du har tilmeldt dig via formularen her, så modtager du en mail med betalingslink (obs. der kan gå op til 24 timer). Når du har betalt denne er du tilmeldt workshoppen.</p>
-								 //og vil løbene bliv holdt opdateret pr. mail. Et par dage før workshoppens start modtager du en invitation til et lukket fora, hvor du kan stille spørgsmål og netværke med andre deltagere. 
+								 //og vil løbene bliv holdt opdateret pr. mail. Et par dage før workshoppens start modtager du en invitation til et lukket fora, hvor du kan stille spørgsmål og netværke med andre deltagere.
 							</form>
 						</section>
-						
+
 
 						<span @click="toggleModal" class="absolute pin-t pin-r pt-4 px-4">
 							<button type="button" title="Luk"><i class="ionicons ion-ios-close"></i></button>
 						</span>
 					</div>
-				 --}}
+
 				</div>
 			</div>
 		</div>
